@@ -35,17 +35,18 @@ Regardless if you can or cannot answer the question, provide a short explanation
 ## Explanation of Submission
 Sources used:
 -[VADER Sentiment Analysis](https://github.com/cjhutto/vaderSentiment#introduction)
+
 -[Large Movie Review Dataset](https://ai.stanford.edu/~amaas/data/sentiment/)
+
 -[NLTK](https://www.nltk.org/)
+
 -[SciKit](https://scikit-learn.org/stable/modules/classes.html)
 
-Packages used that are not ordinary with Python programs:
--[Contractions](https://pypi.org/project/contractions/)
--[Word_Tokenize](https://www.nltk.org/api/nltk.tokenize.html)
 
 In the solution, I implemented two different implentations of sentiment analysis. 
 
-**The first implementation** was with the VADER library in python. VADER is a sentiment analyis package
+## The first implementation 
+was with the VADER library in python. VADER is a sentiment analyis package
 that utilizes previously collected data of lexicons and their sentiments to generate scores for new
 words and inputs. This can be thought as a dictionary that contains many words and their sentiments. Putting in input means accessing this dictionary to obtain certain sentiments and aggregating them into a score - called the compound score. 
 
@@ -61,7 +62,8 @@ translated as the overall text has a overall positive sentiment. Making a graph 
 sentence gives us information that throughout the text, the score varies. The first pargraph is especially negative while the other two paragraphs are positive. This matches up with how I read the paragraph. The first paragraph has a lot of strong, negative words such as "furious", "yelled", "Power" and has exclamation points 
 which, in that context, have a negative connotation. As the text progresses, the tone changes to a more general/neutral tone. Since this is a rule-based approach, the presence of positive words such as "excellent" and "chuckled" mean that it ends up categorizing them as "positive". Looking at the ratios instead of the compound score, we see that as the paragraph progresses, there are high neutral proportions which matches up the tone of the second and third paragraph.
 
-**The second implementation** was with using Random Forest Classification. I sought to see sentiment as a two distinct classes, 1 (positive) and -1 (negative). As such, now the task became classifying and random forest classifiers are a good model to apply for such classification. 
+## The second implementation
+ was with using Random Forest Classification. I sought to see sentiment as a two distinct classes, 1 (positive) and -1 (negative). As such, now the task became classifying and random forest classifiers are a good model to apply for such classification. 
 
 The problem I had was a lack of training data. I thought maybe to construct a small training dataset with fiction books since the input was fiction and had a lot of complex words and peculiar English words such as "bro't". However, that would take time and would not be efficient. The closest thing to match the input's style of writing, that was easy accessible, would be movie reviews. Normally, movie reviews, on IMDb, are discussing artistic concepts and plots and as such, I figured the vocabulary would be somewhat close.
 
