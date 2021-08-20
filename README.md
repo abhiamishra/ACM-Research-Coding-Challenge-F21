@@ -49,7 +49,7 @@ In the solution, I implemented two different implentations of sentiment analysis
 ## VADER implementation 
 The first implementation was with the VADER library in python. VADER is a sentiment analyis package
 that utilizes previously collected data of lexicons and their sentiments to generate scores for new
-words and inputs. This can be thought as a dictionary that contains many words and their sentiments. Putting in input means accessing this dictionary to obtain certain sentiments and aggregating them into a score - called the compound score. 
+words and inputs. This can be thought as a dictionary that contains many words and their sentiments. The interesting aspect about this dictionary is that it has certain rules for context that have been coded in by researchers. As such, these rules allow it to pick sentiment from grammatical order and other structures surrounding text. Putting in input means accessing this dictionary to obtain certain sentiments and aggregating them into a score - called the compound score. 
 
 As per the VADER guidelines,
 the scientific literature surrounding NLP has determined that compound scores above 0.05 are termed as positive,
