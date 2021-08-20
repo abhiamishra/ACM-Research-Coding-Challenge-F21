@@ -54,7 +54,7 @@ words and inputs. This can be thought as a dictionary that contains many words a
 As per the VADER guidelines,
 the scientific literature surrounding NLP has determined that compound scores above 0.05 are termed as positive,
 compound scores below -0.05 are termed as negative, and scores between -0.05 and 0.05 as neutral. Using
-this rule-based library - it's purely looking at words and their strict significance rather than also 
+this rule-based library - it's purely looking at words and their strict significance and also 
 implementing context - I was able to obtain the compound scores for each sentence as well as the 
 proportions of positive/negative/neutral sentiments in each sentence.
 
