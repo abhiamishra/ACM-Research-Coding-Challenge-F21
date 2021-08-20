@@ -34,6 +34,7 @@ Regardless if you can or cannot answer the question, provide a short explanation
 ----------------------------------------------------------------------------------------------------------------
 ## Explanation of Submission
 Sources used:
+
 -[VADER Sentiment Analysis](https://github.com/cjhutto/vaderSentiment#introduction)
 
 -[Large Movie Review Dataset](https://ai.stanford.edu/~amaas/data/sentiment/)
